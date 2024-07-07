@@ -12,14 +12,14 @@ def get_level():
    x=0
    while x==0:
      level = input("Level: ")
-     if level not in ["1","2","3"]:
+     if level not in [1,2,3]:
        continue
      return level
       
     
 def generate_integer(n):
-  a = random.randint(10**n-1 , (10**n)-1)
-  b = random.randint(10**n-1 , (10**n)-1)
+  a = random.randint(10**(n-1) , (10**n)-1)
+  b = random.randint(10**(n-1) , (10**n)-1)
   return a,b
 
 def roundd(a,b):
