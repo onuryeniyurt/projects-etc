@@ -11,7 +11,7 @@ def main():
 def get_level():
    x=0
    while x==0:
-     level = input("Level: ")
+     level = int(input("Level: "))
      if level not in [1,2,3]:
        continue
      return level
